@@ -1,5 +1,3 @@
-import {useEffect} from 'react';
-
 const Box = ({type, selected, result}) => {
     return (
         <div className='box'>

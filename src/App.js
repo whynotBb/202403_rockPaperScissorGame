@@ -1,8 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
 import Box from './component/Box';
-import Btn from './component/Btn';
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 
 function App() {
     const [userSelect, setUserSelect] = useState(0);
