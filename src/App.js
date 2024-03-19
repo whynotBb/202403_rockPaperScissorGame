@@ -39,7 +39,7 @@ function App() {
                 resultData = 2;
             }
         }
-        console.log(comNum);
+        console.log('num : ', num, 'comNum : ', comNum);
         setUserSelect(num);
         setComSelect(comNum);
         setResult(resultData);
