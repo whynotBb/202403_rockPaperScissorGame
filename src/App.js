@@ -42,11 +42,11 @@ function App() {
         setComSelect(comNum);
         setResult(resultData);
     };
-    const choice = {
-        rock: {name: 'Rock', icon: '✊'},
-        paper: {name: 'Paper', icon: '✋'},
-        scissors: {name: 'Scissors', icon: '✌'},
-    };
+    // const choice = {
+    //     rock: {name: 'Rock', icon: '✊'},
+    //     paper: {name: 'Paper', icon: '✋'},
+    //     scissors: {name: 'Scissors', icon: '✌'},
+    // };
     return (
         <div className='body_wrapper'>
             <div className='box_wrap'>
