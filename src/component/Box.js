@@ -1,21 +1,24 @@
-const Box = ({type, selected, result}) => {
+const Box = ({ type, selected, result }) => {
+    console.log("a", type, selected, result);
+    let resultClass = "tie";
+    if (result === 0) {
+        type === "user"
+            ? (resultClass = "win")
+            : type === "com"
+            ? (resultClass = "lose")
+            : (resultClass = "tie");
+    } else if (result === 1) {
+        type === "user"
+            ? (resultClass = "lose")
+            : type === "com"
+            ? (resultClass = "win")
+            : (resultClass = "tie");
+    }
     return (
-        <div className='box'>
+        <div className={`box ${resultClass}`}>
             <h4>{type}</h4>
-            <p>{selected === 0 ? '✊' : selected === 1 ? '✋' : '✌'}</p>
-            <h5>
-                {type === 'user'
-                    ? result === 0
-                        ? 'WIN'
-                        : result === 1
-                        ? 'LOSE'
-                        : 'TIE'
-                    : result === 0
-                    ? 'LOSE'
-                    : result === 1
-                    ? 'WIN'
-                    : 'TIE'}
-            </h5>
+            <p>{selected?.icon}</p>
+            <h5>{resultClass.toUpperCase()}</h5>
         </div>
     );
 };
