@@ -1,5 +1,4 @@
 import './App.css';
-import Box from './component/Box';
 import BoxClass from './component/BoxClass';
 import {useState} from 'react';
 
