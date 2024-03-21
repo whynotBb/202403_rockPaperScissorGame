@@ -1,18 +1,10 @@
-const Box = ({ type, selected, result }) => {
-    console.log("a", type, selected, result);
-    let resultClass = "tie";
+const Box = ({type, selected, result}) => {
+    console.log('a', type, selected, result);
+    let resultClass = 'tie';
     if (result === 0) {
-        type === "user"
-            ? (resultClass = "win")
-            : type === "com"
-            ? (resultClass = "lose")
-            : (resultClass = "tie");
+        type === 'user' ? (resultClass = 'win') : type === 'com' ? (resultClass = 'lose') : (resultClass = 'tie');
     } else if (result === 1) {
-        type === "user"
-            ? (resultClass = "lose")
-            : type === "com"
-            ? (resultClass = "win")
-            : (resultClass = "tie");
+        type === 'user' ? (resultClass = 'lose') : type === 'com' ? (resultClass = 'win') : (resultClass = 'tie');
     }
     return (
         <div className={`box ${resultClass}`}>
